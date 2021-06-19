@@ -7,7 +7,7 @@ sc = SparkContext(conf=conf)
 
 
 sw_init = 1.0/685230
-filepath = "/home/zhiyuan/Documents/BIgData/FinalProj/web-BerkStan_clean.txt"
+filepath = "path/to/web-BerkStan_clean.txt"
 from_to = sc.textFile(filepath)
 """
 links [(from,[to, to,..]),...]
@@ -41,7 +41,7 @@ for i in tqdm(range(20)):
 
 # [('22', 0.15000023681497784)]
 
-ranks.saveAsTextFile("/home/zhiyuan/Documents/BIgData/FinalProj/rank.txt")
+ranks.saveAsTextFile("path/to/rank.txt")
 print("done")
 
 
